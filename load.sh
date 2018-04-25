@@ -1,4 +1,6 @@
 #!/bin/bash
+
+echo "Please put your Nintendo Switch in Tegra RCM mode."
 pushd shofel2/exploit
 ./shofel2.py cbfs.bin ../../coreboot/build/coreboot.rom
 popd
