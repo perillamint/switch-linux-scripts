@@ -2,6 +2,7 @@
 
 set -e
 export PATH=$(pwd)/arm-linux-gnueabi/bin:$PATH
+export PATH=$(pwd)/aarch64-linux-gnu/bin:$PATH
 NPROC=$(nproc --all)
 
 pushd shofel2/exploit

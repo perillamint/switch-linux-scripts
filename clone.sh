@@ -5,11 +5,19 @@ git clone https://github.com/fail0verflow/switch-u-boot.git u-boot
 git clone https://github.com/fail0verflow/switch-linux.git linux
 git clone https://github.com/boundarydevices/imx_usb_loader.git
 
-wget -O arm-linux-gnueabi.tar.xz https://releases.linaro.org/components/toolchain/binaries/latest-7/arm-linux-gnueabi/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi.tar.xz
+LINARO_GCC_VER=7.2.1-2017.11
+
+wget -O arm-linux-gnueabi.tar.xz https://releases.linaro.org/components/toolchain/binaries/latest-7/arm-linux-gnueabi/gcc-linaro-$LINARO_GCC_VER-x86_64_arm-linux-gnueabi.tar.xz
+wget -O aarch64-linux-gnu.tar.xz http://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/aarch64-linux-gnu/gcc-linaro-$LINARO_GCC_VER-x86_64_aarch64-linux-gnu.tar.xz
 
 mkdir -p arm-linux-gnueabi
 cd arm-linux-gnueabi
-tar tar --strip-components 1 -xvf ../arm-linux-gnueabi.tar.xz
+tar --strip-components 1 -xvf ../arm-linux-gnueabi.tar.xz
+cd ..
+
+mkdir -p aarch64-linux-gnu
+cd aarch64-linux-gnu
+tar --strip-components 1 -xvf ../aarch64-linux-gnu.tar.xz
 cd ..
 
 cd imx_usb_loader
