@@ -1,7 +1,10 @@
 FROM ubuntu:bionic
 
 RUN apt-get update \
- && apt-get install alpine-sdk bash xz -y
+ && apt-get install -y build-essential xz-utils \
+    python python3 python-dev swig \
+    pkg-config m4 bison flex curl zlib1g-dev libusb-1.0-0-dev libssl-dev \
+    bc linux-firmware
 
 RUN mkdir -p /opt/switch-linux
 
