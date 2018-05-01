@@ -17,8 +17,8 @@ popd
 
 pushd coreboot
 make nintendo_switch_defconfig
-make iasl -j$NPROC
-make -j$NPROC
+make iasl
+make
 popd
 
 pushd imx_usb_loader
