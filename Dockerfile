@@ -1,8 +1,10 @@
-FROM alpine
+FROM ubuntu:bionic
 
-RUN apk add --update alpine-sdk bash xz
+RUN apt-get update \
+ && apt-get install alpine-sdk bash xz -y
 
 RUN mkdir -p /opt/switch-linux
+
 WORKDIR /opt/switch-linux
 
 ADD *.sh /opt/switch-linux/

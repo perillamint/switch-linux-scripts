@@ -6,6 +6,6 @@ linux/**
 shofel2/**
 u-boot/**
 *.tar.xz
-docker_workdir/**
-docker_result/**
+docker-workdir/**
+docker-result/**
 Dockerfile
