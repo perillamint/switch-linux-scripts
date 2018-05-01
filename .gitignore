@@ -5,3 +5,5 @@ linux
 shofel2
 u-boot
 *.tar.xz
+docker-workdir
+docker-result

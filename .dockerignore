@@ -1,0 +1,10 @@
+arm-linux-gnueabi/**
+coreboot/**
+imx_usb_loader/**
+linux/**
+shofel2/**
+u-boot/**
+*.tar.xz
+docker_workdir/**
+docker_result/**
+Dockerfile
