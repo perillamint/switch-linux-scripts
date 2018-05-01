@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --update alpine-sdk bash
+RUN apk add --update alpine-sdk bash xz
 
 RUN mkdir -p /opt/switch-linux
 WORKDIR /opt/switch-linux
