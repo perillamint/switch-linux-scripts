@@ -11,3 +11,4 @@ RUN mkdir -p /opt/switch-linux
 WORKDIR /opt/switch-linux
 
 ADD *.sh /opt/switch-linux/
+ADD brcmfmac4356-pcie.txt /lib/firmware/brcm/brcmfmac4356-pcie.txt
