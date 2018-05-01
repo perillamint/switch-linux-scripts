@@ -11,4 +11,7 @@ RUN mkdir -p /opt/switch-linux
 WORKDIR /opt/switch-linux
 
 ADD *.sh /opt/switch-linux/
+ADD dockerscript/*.sh /opt/switch-linux
 ADD brcmfmac4356-pcie.txt /lib/firmware/brcm/brcmfmac4356-pcie.txt
+
+CMD ["/opt/switch-linux/buildshell.sh"]
