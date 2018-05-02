@@ -47,5 +47,28 @@ First, put your switch into RCM mode and run following command
 ./load-docker.sh
 ```
 
+## Cheat mode -- use precompiled blob
+### Download and extract blob
+Run this command
+
+```
+./get_precompiled_blob.sh
+```
+
+This will check signature of tarball and extract artifacts into `docker-result` directory
+
+### Building host side of tools
+Run this scripts in order. You have to deal with host side dependency
+
+1. `./minimal_clone.sh`
+2. `./minimal_build.sh`
+
+### Loading Linux via RCM
+First, put your switch into RCM mode and run following command
+
+```
+./load-docker.sh
+```
+
 ## License
 [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
