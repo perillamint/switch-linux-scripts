@@ -8,3 +8,5 @@ u-boot
 *.tar.xz
 docker-workdir
 docker-result
+gpg
+*.asc
