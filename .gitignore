@@ -10,3 +10,4 @@ docker-workdir
 docker-result
 gpg
 *.asc
+vendor

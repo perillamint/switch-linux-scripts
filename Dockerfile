@@ -15,4 +15,10 @@ ADD dockerscript/*.sh /opt/switch-linux/
 ADD brcmfmac4356-pcie.txt /lib/firmware/brcm/brcmfmac4356-pcie.txt
 ADD *.patch /opt/switch-linux/
 
+## !! WARNING: UNLICENSED PROPRIETARY BLOBS AHEAD !!
+
+ADD vendor/brcmfmac4356a3-pcie.bin /lib/firmware/brcm/brcmfmac4356-pcie.bin
+ADD vendor/brcmfmac4356a3-pcie.txt /lib/firmware/brcm/brcmfmac4356-pcie.txt
+ADD vendor/BCM.hcd /lib/firmware/brcm/BCM.hcd
+
 ENTRYPOINT ["/opt/switch-linux/buildshell.sh"]
