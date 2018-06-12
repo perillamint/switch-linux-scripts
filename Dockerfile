@@ -19,6 +19,6 @@ ADD patches /opt/switch-linux/patches/
 
 ADD vendor/brcmfmac4356a3-pcie.bin /lib/firmware/brcm/brcmfmac4356-pcie.bin
 ADD vendor/brcmfmac4356a3-pcie.txt /lib/firmware/brcm/brcmfmac4356-pcie.txt
-ADD vendor/BCM.hcd /lib/firmware/brcm/BCM.hcd
+ADD vendor/BCM4356A3.hcd /lib/firmware/brcm/BCM4356A3.hcd
 
 ENTRYPOINT ["/opt/switch-linux/buildshell.sh"]
