@@ -11,7 +11,7 @@ git reset --hard 0a322b01cacf03e3be727e3e4c3d46d69f2e343e
 cd ..
 
 cd linux
-patch -p1 < ../*.patch
+cat ../*.patch | patch -p1
 cd ..
 
 cd coreboot
