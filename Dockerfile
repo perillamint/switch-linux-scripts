@@ -13,6 +13,6 @@ WORKDIR /opt/switch-linux
 ADD *.sh /opt/switch-linux/
 ADD dockerscript/*.sh /opt/switch-linux/
 ADD brcmfmac4356-pcie.txt /lib/firmware/brcm/brcmfmac4356-pcie.txt
-ADD *.patch /opt/switch-linux/
+ADD patches /opt/switch-linux/patches/
 
 ENTRYPOINT ["/opt/switch-linux/buildshell.sh"]
