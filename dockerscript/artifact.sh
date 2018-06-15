@@ -5,3 +5,4 @@ cp -f linux/arch/arm64/boot/dts/nvidia/tegra210-nintendo-switch.dtb /var/lib/wor
 cp -f shofel2/usb_loader/switch.scr.img /var/lib/workresult/
 cp -f shofel2/exploit/cbfs.bin /var/lib/workresult/
 cp -f coreboot/build/coreboot.rom /var/lib/workresult/
+cp -arf modules /var/lib/workresult/
