@@ -4,7 +4,7 @@ coreboot
 imx_usb_loader
 linux
 shofel2
-u-boot
+/u-boot
 *.tar.xz
 docker-workdir
 docker-result

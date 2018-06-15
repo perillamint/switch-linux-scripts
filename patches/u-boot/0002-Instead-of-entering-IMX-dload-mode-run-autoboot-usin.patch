@@ -1,0 +1,26 @@
+From e0669556653dda06ef0c48e0a3b1a41dea3efa80 Mon Sep 17 00:00:00 2001
+From: perillamint <perillamint@quendi.moe>
+Date: Fri, 15 Jun 2018 14:31:16 +0900
+Subject: [PATCH 2/2] Instead of entering IMX dload mode, run autoboot using
+ script on SD card
+
+---
+ configs/nintendo-switch_defconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configs/nintendo-switch_defconfig b/configs/nintendo-switch_defconfig
+index 464465a08b..70e743e013 100644
+--- a/configs/nintendo-switch_defconfig
++++ b/configs/nintendo-switch_defconfig
+@@ -41,7 +41,7 @@ CONFIG_USB_GADGET_DOWNLOAD=y
+ CONFIG_USB_HOST_ETHER=y
+ # TODO
+ CONFIG_BOOTDELAY=0
+-CONFIG_BOOTCOMMAND="sdp 0"
++CONFIG_BOOTCOMMAND="run distro_bootcmd"
+ CONFIG_ENV_IS_NOWHERE=y
+ CONFIG_REQUIRE_SERIAL_CONSOLE=n
+ CONFIG_EFI_LOADER=n
+-- 
+2.17.1
+
